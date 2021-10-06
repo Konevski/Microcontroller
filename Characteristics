@@ -28,8 +28,8 @@ E.g. Aeroplanes, air traffic control
 6. Distributed systems
 Collection of autonomous computers connected using a communication network.
 E.g: Telephone, Emails, Electronic Banking, Sensor Networking
-      -The system requires Concurrent Components, a communication network and a synchronization mechanism.
-       - Is a field of computer science that studies distributed systems and the computer program that runs in a distributed system is called a distributed program.
+The system requires Concurrent Components, a communication network and a synchronization mechanism.
+Is a field of computer science that studies distributed systems and the computer program that runs in a distributed system is called a distributed program.
 
 
 Dependable system attributes:
