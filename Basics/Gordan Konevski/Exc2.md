@@ -1,1 +1,1 @@
-##  Reactive systems and Real-time systems
+## Reactive systems and Real-time systems
