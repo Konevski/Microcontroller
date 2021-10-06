@@ -42,3 +42,14 @@ Availability: is the probability that the system will be functioning correctly a
 
 Safety
 Security
+
+
+
+
+
+
+
+
+
+
+
