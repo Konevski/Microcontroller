@@ -4,9 +4,12 @@
 - Central heating systems
 - Engine management systems in vehicles
 - Domestic appliances, such as dishwashers, TVs and digital phones
+- ATM
 - Digital watches
 - FPGAS
-- Mic
+- Microcontroller 
+- Stm microcontroller 
+
 
 
 ### Advantages & Disadvantages
