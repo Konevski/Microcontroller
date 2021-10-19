@@ -1,16 +1,13 @@
- 4. Embedded systems (LS)
+ ### 4. Embedded Systems
 
-- E.g electronic calculators, GPS systems, fitness trackers.
-
-Examples of embedded systems include:
-
--central heating systems
--engine management systems in vehicles
--domestic appliances, such as dishwashers, TVs and digital phones
--digital watches
--electronic calculators
--GPS systems
--fitness trackers
+- Electronic calculators, GPS systems, fitness trackers.
+- Central heating systems
+- Engine management systems in vehicles
+- Domestic appliances, such as dishwashers, TVs and digital phones
+- Digital watches
+- Electronic calculators
+- GPS systems
+- Fitness trackers
 
 Embedded devices are not usually programmable by a user – the programming is usually done beforehand by the manufacturer. However, it is often possible to upgrade the software on an embedded device. For example, fitness trackers are embedded systems, but the software can often be upgraded by connecting the device to a PC and installing the new software.
 
