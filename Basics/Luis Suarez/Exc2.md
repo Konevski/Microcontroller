@@ -5,9 +5,9 @@
 - Engine management systems in vehicles
 - Domestic appliances, such as dishwashers, TVs and digital phones
 - Digital watches
-- Electronic calculators
-- GPS systems
-- Fitness trackers
+- FPGAS
+- Mic
+
 
 ### Advantages & Disadvantages
 
