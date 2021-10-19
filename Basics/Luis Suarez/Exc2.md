@@ -1,5 +1,5 @@
-### 4. Embedded systems (LS)
-- An embedded system is a microprocessor-based computer hardware system with software that is designed to perform a dedicated function, either as an independent system or as a part of a large system. At the core is an integrated circuit designed to carry out computation for real-time operations.
+ 4. Embedded systems (LS)
+
 - E.g electronic calculators, GPS systems, fitness trackers.
 
 Examples of embedded systems include:
@@ -19,7 +19,7 @@ Embedded systems can have advantages over general purpose computers in that:
 Their limited number of functions means they are cheaper to design and build.
 They tend to require less power. Some devices run from batteries.
 They do not need much processing power. They can be built using cheaper, less powerful processors.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 6. Distributed systems (LS)
 - Collection of autonomous computers connected using a communication network.
 - E.g: Telephone, Emails, Electronic Banking, Sensor Networking
