@@ -80,6 +80,15 @@ interacts with the real physical world, controlling some
 specific hardware (source: lectures)
 - Interaction with the technical system via actors and
 sensors (source: lectures)
+Microcontroller parts:
+- CPU
+- Memory
+- Storage 
+- I/O ports 
+- ADC and DAC converters 
+- timers/counters
+- BUS to connect everything together
+
 ### Hardware platforms:
 - General purpose microprocessor: X86, PowerPC, … +
 processor board
