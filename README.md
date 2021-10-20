@@ -2,7 +2,7 @@
 ### Members of the group: 
 - Thanas Dushku
 - Luis Cabezas Suarez
-- K. M. Mohsin Fahim
+- K. M. Mohsin Huda Fahim
 - Gordan Konevski
 
 HSHL, Electronic Engineering 2021
