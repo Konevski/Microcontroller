@@ -107,9 +107,14 @@ BUS to connect everything together.
 Usually we use microprocessors with low cost
 Variants: 1. Simple core developed for the microcontroller
 2. Using an older core of microprocessors 
-
-
-
+- older cores have been proven to work, have relatively low cost and perform fast enough to be reliable
+they require less power and have faster response times due to lower layering and abstraction levels 
+(e.g. no speculations, not needing to manage virtual memory)
+A pipeline might lead to pipeline conficts, cache to cache misses and speculations to misspeculations
+The more complex the processor core is, the harder it is to predict the timing behavior.
+RISC or CISC (https://www.microcontrollertips.com/risc-vs-cisc-architectures-one-better/)
+One of the major differences between RISC and CISC is that RISC emphasizes efficiency in cycles per instruction and CISC emphasizes efficiency in instructions per program.
+RISC needs more RAM, whereas CISC has an emphasis on smaller code size and uses less RAM overall than RISC. 
 
 
 
