@@ -94,7 +94,19 @@ The data must not be able to be altered or accessed by unauthorized individuals.
 
 ## Task 3: Give a schematic overview on the main elements of a microcontroller.
 
+A microcontroller usually has a:
+CPU,
+memory(RAM and ROM), 
+I/O ports, 
+ADC and DAC converters, 
+timers/counters,
+BUS to connect everything together.
 
+## Task 4: Which processors are typically used for microcontrollers?
+
+Usually we use microprocessors with low cost
+Variants: 1. Simple core developed for the microcontroller
+2. Using an older core of microprocessors 
 
 
 
