@@ -1,27 +1,58 @@
-### 4. Embedded systems (LS)
-- An embedded system is a microprocessor-based computer hardware system with software that is designed to perform a dedicated function, either as an independent system or as a part of a large system. At the core is an integrated circuit designed to carry out computation for real-time operations.
-- E.g electronic calculators, GPS systems, fitness trackers.
+ ### 1. Embedded Systems
 
-Examples of embedded systems include:
+- Electronic calculators, GPS systems, fitness trackers.
+- Central heating systems
+- Engine management systems in vehicles
+- Domestic appliances, such as dishwashers, TVs and digital phones
+- ATM
+- Digital watches
+- FPGAS
+- Microcontroller 
+- Stm microcontroller 
 
--central heating systems
--engine management systems in vehicles
--domestic appliances, such as dishwashers, TVs and digital phones
--digital watches
--electronic calculators
--GPS systems
--fitness trackers
+### Advantages & Disadvantages
 
-Embedded devices are not usually programmable by a user – the programming is usually done beforehand by the manufacturer. However, it is often possible to upgrade the software on an embedded device. For example, fitness trackers are embedded systems, but the software can often be upgraded by connecting the device to a PC and installing the new software.
+- They tend to require less power. Some devices run from batteries.
+- Fitness trackers are embedded systems, but the software can often be upgraded by connecting the device to a PC and installing the new software.
 
-Embedded systems can have advantages over general purpose computers in that:
 
-Their limited number of functions means they are cheaper to design and build.
-They tend to require less power. Some devices run from batteries.
-They do not need much processing power. They can be built using cheaper, less powerful processors.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 2. Distributed systems (LS)
 
-### 6. Distributed systems (LS)
 - Collection of autonomous computers connected using a communication network.
-- E.g: Telephone, Emails, Electronic Banking, Sensor Networking
+- Telephone, Emails, Electronic Banking, Sensor Networking
 - The system requires Concurrent Components, a communication network and a synchronization mechanism.
-- Is a field of computer science that studies distributed systems and the computer program that runs in a distributed system is called a distributed program.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 3. Reactive systems
+- Market flow, Streaming, google docs,
+- Should respond in consistent and timely manner.
+- Will detect problems quickly and mitigate it effectively
+- Implemented via loops (for, while):
+```
+int main () {
+   /* local variable definition */
+   int a = 10;
+   /* while loop execution */
+   while( a < 20 ) {
+      printf("value of a: %d\n", a);
+      a++;
+   }
+   return 0;
+}
+```
+- Responds to interrupts
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 4. Real-time systems
+- RTOS: Provide the primitives real-time scheduling policies, inter process communication and run-time monitoring. There a number of RTOSs, e.g. RT-Mach, VxWORKS, Solaris, Lynx.
+- Air Traffic Control Systems
+- Networked Multimedia Systems
+- Hard Real-Time operating system: These operating systems guarantee that critical tasks be completed within a range of time
+- Soft real-time operating system: This operating system provides some relaxation in the time limit.
+- Satellite tracking, video conferencing 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 5. Dependable systems 
+- A safety and dependability case has to be approved by the regulator.
+- Has to create the evidence to convince a regulator that the system is dependable, safe, and secure.
+- Nuclear systems
+- Security, Availability, Reliability, Safety and Resilience.
+

@@ -2,7 +2,22 @@
 - E.g. thermometer, messaging apps, google docs, etc.
 - Could be deadline dependant, especially if the system is exposed to higher risks
 - Continuous interaction with the outside world, real-time data acquisition, event trigger response
-- Implemented via loops (for, while)
+- Implemented via loops (for, while); An Arduino example:
+```
+void loop()
+{
+if (button == 1) {
+    green_light();
+    delay(DELAY_GREEN);
+    yellow_light();
+    delay(DELAY_YELLOW);
+    red_light();
+    delay(DELAY_RED);
+  }
+  else
+    return 0;
+}
+```
 - The steady-state behavior of the system does not terminate (except under the condition of a fatal error)
 - Responds to interrupts
 
@@ -14,7 +29,14 @@
 - Hybrid Systems: a combination of Continuous and Discrete systems
 - RTOS: An operating system that guarantees a certain capability within a specified time constraint, usually a preemptive scheduling system
 
-### Terms related to real time system:
+
+### 3. Continuous/discrete/hybrid systems
+### 4. Embedded systems
+### 5. Dependable systems 
+### 6. Distributed systems 
+### 7. Dependable system attributes:
+
+### Terms related to real time system (https://www.geeksforgeeks.org/real-time-systems/):
 
 - Job – A job is a small piece of work that can be assigned to a processor and may or may not require resources.
 - Task – A set of related jobs that jointly provide some system functionality.
