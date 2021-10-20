@@ -21,7 +21,7 @@ void control(int event){
 		}
 		break;
 
-	case 3:           //strong taken
+	case 3:           //weak taken
 		if (event == 0) {
 			state = 2;  //switching to weak not-taken
 		}
