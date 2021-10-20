@@ -50,7 +50,7 @@ int main () {
 - Soft real-time operating system: This operating system provides some relaxation in the time limit.
 - Satellite tracking, video conferencing 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 6. Dependable systems 
+### 5. Dependable systems 
 - A safety and dependability case has to be approved by the regulator.
 - Has to create the evidence to convince a regulator that the system is dependable, safe, and secure.
 - Nuclear systems
