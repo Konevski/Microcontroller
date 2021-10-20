@@ -27,23 +27,19 @@
 - Market flow, Streaming, google docs,
 - Should respond in consistent and timely manner.
 - Will detect problems quickly and mitigate it effectively
-- Implemented via loops (for, while); An Arduino example:
+- Implemented via loops (for, while):
 ```
-void loop()
-{
-if (button == 1) {
-    green_light();
-    delay(DELAY_GREEN);
-    yellow_light();
-    delay(DELAY_YELLOW);
-    red_light();
-    delay(DELAY_RED);
-  }
-  else
-    return 0;
+int main () {
+   /* local variable definition */
+   int a = 10;
+   /* while loop execution */
+   while( a < 20 ) {
+      printf("value of a: %d\n", a);
+      a++;
+   }
+   return 0;
 }
 ```
-- The steady-state behavior of the system does not terminate (except under the condition of a fatal error)
 - Responds to interrupts
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 4. Real-time systems
