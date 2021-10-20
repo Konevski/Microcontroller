@@ -80,7 +80,7 @@ interacts with the real physical world, controlling some
 specific hardware (source: lectures)
 - Interaction with the technical system via actors and
 sensors (source: lectures)
-### different hardware platforms:
+### Hardware platforms:
 - General purpose microprocessor: X86, PowerPC, … +
 processor board
 - Highly integrated microprocessor: additional I/O on the
