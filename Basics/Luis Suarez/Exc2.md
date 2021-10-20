@@ -1,4 +1,4 @@
- ### 4. Embedded Systems
+ ### 1. Embedded Systems
 
 - Electronic calculators, GPS systems, fitness trackers.
 - Central heating systems
@@ -10,8 +10,6 @@
 - Microcontroller 
 - Stm microcontroller 
 
-
-
 ### Advantages & Disadvantages
 
 - They tend to require less power. Some devices run from batteries.
@@ -19,8 +17,46 @@
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 6. Distributed systems (LS)
+### 2. Distributed systems (LS)
 
 - Collection of autonomous computers connected using a communication network.
 - Telephone, Emails, Electronic Banking, Sensor Networking
 - The system requires Concurrent Components, a communication network and a synchronization mechanism.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 3. Reactive systems
+- Market flow, Streaming, google docs,
+- Should respond in consistent and timely manner.
+- Will detect problems quickly and mitigate it effectively
+- Implemented via loops (for, while); An Arduino example:
+```
+void loop()
+{
+if (button == 1) {
+    green_light();
+    delay(DELAY_GREEN);
+    yellow_light();
+    delay(DELAY_YELLOW);
+    red_light();
+    delay(DELAY_RED);
+  }
+  else
+    return 0;
+}
+```
+- The steady-state behavior of the system does not terminate (except under the condition of a fatal error)
+- Responds to interrupts
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 4. Real-time systems
+- RTOS: Provide the primitives real-time scheduling policies, inter process communication and run-time monitoring. There a number of RTOSs, e.g. RT-Mach, VxWORKS, Solaris, Lynx.
+- Air Traffic Control Systems
+- Networked Multimedia Systems
+- Hard Real-Time operating system: These operating systems guarantee that critical tasks be completed within a range of time
+- Soft real-time operating system: This operating system provides some relaxation in the time limit.
+- Satellite tracking, video conferencing 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 6. Dependable systems 
+- A safety and dependability case has to be approved by the regulator.
+- Has to create the evidence to convince a regulator that the system is dependable, safe, and secure.
+- Nuclear systems
+- Security, Availability, Reliability, Safety and Resilience.
+
