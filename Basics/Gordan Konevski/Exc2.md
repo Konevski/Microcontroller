@@ -57,7 +57,7 @@ ISR(TIMER1_OVF_vect)        // interrupt service routine
 
 void loop()
 {
-	// your program here...
+	// real-time loop code
 }
 ```
 
