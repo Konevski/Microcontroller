@@ -36,9 +36,12 @@ int main () {
    while( a < 20 ) {
       printf("value of a: %d\n", a);
       a++;
+      if( a > 15) {
+         /* terminate the loop using break statement */
+         break;
+      }		
    }
    return 0;
-}
 ```
 - Responds to interrupts
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
