@@ -47,28 +47,49 @@ The coding is performed based on the coding guidelines and standards. The code g
 ## _**The difference between waterfall and V model is that in waterfall model the software testing is done after the completion of development phase while in V model, each phase in the development cycle has a directly associated testing phase.**_
 
 ## Agile
+
 a) **Size of the developer team**: Small
+
 b) **Complexity of the project**: Simple
+
 c) **Known requirements**: Not too important
+
 d) **Change of requirements**: Possible and easy
+
 e) **Time To Market**: Really fast
+
 f) **Knowledge of IT (customer)**: High
+
 g) **Average number of iteration**: More than one
 
 ## Waterfall
+
 a) **Size of the developer team**: Medium
+
 b) **Complexity of the project**: Simple
+
 c) **Known requirements**: Yes
+
 d) **Change of requirements**: Not possible
+
 e) **Time To Market**: Moderate
+
 f) **Knowledge of IT (customer)**: Very little
+
 g) **Average number of iteration**: One
 
 ## V-Model
+
 a) **Size of the developer team**: Large
+
 b) **Complexity of the project**: Complex
+
 c) **Known requirements**: Yes
+
 d) **Change of requirements**: Yes
+
 e) **Time To Market**: Slow
+
 f) **Knowledge of IT (customer)**: No
+
 g) **Average number of iteration**: One
