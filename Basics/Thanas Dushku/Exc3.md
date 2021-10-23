@@ -1,5 +1,6 @@
-#Waterfall
-###Phases
+# Waterfall
+
+### Phases
 **Requirement Gathering and analysis** − All possible requirements of the system to be developed are captured in this phase and documented in a requirement specification document.
 
 **System Design** − The requirement specifications from first phase are studied in this phase and the system design is prepared. This system design helps in specifying hardware and system requirements and helps in defining the overall system architecture.
@@ -12,8 +13,10 @@
 
 **Maintenance** − There are some issues which come up in the client environment. To fix those issues, patches are released. Also to enhance the product some better versions are released. Maintenance is done to deliver these changes in the customer environment.
 
-#V-Model
-###Phases 
+# V-Model
+
+### Phases 
+
 V-Model has validation and verification phases
 
 1. **Verification Phases**
