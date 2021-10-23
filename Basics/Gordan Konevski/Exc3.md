@@ -32,12 +32,3 @@ Three types of maintenance:
 
 ## Differences between V-model and the Waterfall model
 The main difference between waterfall model and V model is that in waterfall model, the testing activities are carried out after the development activities are over. On the other hand in V model, testing activities start with the first stage itself. So, perhaps the tool needs to be tested in parallel to its development.
-
-## Model Assesion (For all models [should be like 4]):
-1. Size of the developer team (1-3, 1 small, 3 big):
-2. Complexity of the project (1-3, 1 small, 3 big):
-3. Must the requirements for the project be known (Y/N):
-4. Is it possible to change the requirements (Y/N):
-5. Time To Market (1-3, 1 short, 3 long):
-6. How much IT knowledge must the customer have? (1-3, 1 small, 3 big):
-7. Average number of iteration:
