@@ -1,6 +1,7 @@
 # Waterfall
 
-### Phases
+## Phases  (source: https://www.tutorialspoint.com/sdlc/sdlc_waterfall_model.htm)
+
 **Requirement Gathering and analysis** − All possible requirements of the system to be developed are captured in this phase and documented in a requirement specification document.
 
 **System Design** − The requirement specifications from first phase are studied in this phase and the system design is prepared. This system design helps in specifying hardware and system requirements and helps in defining the overall system architecture.
@@ -15,11 +16,12 @@
 
 # V-Model
 
-### Phases 
+## Phases  (source: https://www.tutorialspoint.com/sdlc/sdlc_v_model.htm)
 
 V-Model has validation and verification phases
 
 1. **Verification Phases**
+
 **Business Requirement Analysis**
 This is the first phase in the development cycle where the product requirements are understood from the customer’s perspective. This phase involves detailed communication with the customer to understand his expectations and exact requirement. This is a very important activity and needs to be managed well, as most of the customers are not sure about what exactly they need. The acceptance test design planning is done at this stage as business requirements can be used as an input for acceptance testing.
 
