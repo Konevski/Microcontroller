@@ -1,18 +1,32 @@
 # Waterfall
 
-## Phases  (source: https://www.tutorialspoint.com/sdlc/sdlc_waterfall_model.htm)
+## Phases of Waterfall Source https://www.lucidchart.com/blog/waterfall-project-management-methodology
 
-**Requirement Gathering and analysis** − All possible requirements of the system to be developed are captured in this phase and documented in a requirement specification document.
+# 1. Requirement gathering and documentation
+In this stage, you should gather comprehensive information about what this project requires. You can gather this information in a variety of ways, from interviews to questionnaires to interactive brainstorming. By the end of this phase, the project requirements should be clear, and you should have a requirements document that has been distributed to your team.
 
-**System Design** − The requirement specifications from first phase are studied in this phase and the system design is prepared. This system design helps in specifying hardware and system requirements and helps in defining the overall system architecture.
+# 2. System design
+Using the established requirements, your team designs the system. No coding takes place during this phase, but the team establishes specs such as programming language or hardware requirements.
 
-**Implementation** − With inputs from the system design, the system is first developed in small programs called units, which are integrated in the next phase. Each unit is developed and tested for its functionality, which is referred to as Unit Testing.
+# 3. Implementation
+Coding takes place in this phase. Programmers take information from the previous stage and create a functional product. They typically implement code in small pieces, which are integrated at the end of this phase or the beginning of the next.
 
-**Integration and Testing** − All the units developed in the implementation phase are integrated into a system after testing of each unit. Post integration the entire system is tested for any faults and failures.
+# 4. Testing
+Once all coding is done, testing of the product can begin. Testers methodically find and report any problems. If serious issues arise, your project may need to return to phase one for reevaluation.
 
-**Deployment of system** − Once the functional and non-functional testing is done; the product is deployed in the customer environment or released into the market.
+# 5. Delivery/deployment
+In this phase, the product is complete, and your team submits the deliverables to be deployed or released.
 
-**Maintenance** − There are some issues which come up in the client environment. To fix those issues, patches are released. Also to enhance the product some better versions are released. Maintenance is done to deliver these changes in the customer environment.
+# 6. Maintenance
+The product has been delivered to the client and is being used. As issues arise, your team may need to create patches and updates may to address them. Again, big issues may necessitate a return to phase one.
+
+## Benefits of waterfall project 
+Although most companies use some combination of project management styles, a 2017 report from LiquidPlanner showed that 25.5% of manufacturing companies currently use waterfall. What makes this methodology successful for so many teams?
+
+# Keeps training simple
+
+This methodology could ensure your project’s success even if there are unanticipated changes in bandwidth. Because waterfall project management emphasizes thorough documentation, you can easily and seamlessly add new team members to any project. There’s no need to intuit what an absent programmer was trying to do, as everything—from the project’s conception to its completion—is recorded. New team members can simply refer to documentation to get quickly up to speed.
+
 
 # V-Model
 
