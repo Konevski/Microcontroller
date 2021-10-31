@@ -66,11 +66,11 @@ a) **Size of the developer team**: Small
 
 b) **Complexity of the project**: Simple
 
-c) **Known requirements**: Not too important
+c) **Known requirements**: Yes
 
-d) **Change of requirements**: Possible and easy
+d) **Change of requirements**: Possible 
 
-e) **Time To Market**: Really fast
+e) **Time To Market**: fast
 
 f) **Knowledge of IT (customer)**: High
 
@@ -82,13 +82,13 @@ a) **Size of the developer team**: Medium
 
 b) **Complexity of the project**: Simple
 
-c) **Known requirements**: Yes
+c) **Known requirements**: No
 
 d) **Change of requirements**: Not possible
 
 e) **Time To Market**: Moderate
 
-f) **Knowledge of IT (customer)**: Very little
+f) **Knowledge of IT (customer)**:  little
 
 g) **Average number of iteration**: One
 
@@ -96,7 +96,7 @@ g) **Average number of iteration**: One
 
 a) **Size of the developer team**: Large
 
-b) **Complexity of the project**: Complex
+b) **Complexity of the project**: Hard
 
 c) **Known requirements**: Yes
 
