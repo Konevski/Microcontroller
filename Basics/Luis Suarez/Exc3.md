@@ -2,22 +2,22 @@
 
 ## Phases of Waterfall Source https://www.lucidchart.com/blog/waterfall-project-management-methodology
 
-# 1. Requirement gathering and documentation
+* 1. Requirement gathering and documentation
 In this stage, you should gather comprehensive information about what this project requires. You can gather this information in a variety of ways, from interviews to questionnaires to interactive brainstorming. By the end of this phase, the project requirements should be clear, and you should have a requirements document that has been distributed to your team.
 
-# 2. System design
+*2. System design
 Using the established requirements, your team designs the system. No coding takes place during this phase, but the team establishes specs such as programming language or hardware requirements.
 
-# 3. Implementation
+* 3. Implementation
 Coding takes place in this phase. Programmers take information from the previous stage and create a functional product. They typically implement code in small pieces, which are integrated at the end of this phase or the beginning of the next.
 
-# 4. Testing
+* 4. Testing
 Once all coding is done, testing of the product can begin. Testers methodically find and report any problems. If serious issues arise, your project may need to return to phase one for reevaluation.
 
-# 5. Delivery/deployment
+* 5. Delivery/deployment
 In this phase, the product is complete, and your team submits the deliverables to be deployed or released.
 
-# 6. Maintenance
+* 6. Maintenance
 The product has been delivered to the client and is being used. As issues arise, your team may need to create patches and updates may to address them. Again, big issues may necessitate a return to phase one.
 
 ## Benefits of waterfall project 
