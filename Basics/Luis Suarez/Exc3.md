@@ -1,6 +1,6 @@
 # Waterfall
 
-## Phases of Waterfall (Source) https://www.lucidchart.com/blog/waterfall-project-management-methodology
+## Phases of Waterfall (Source https://www.lucidchart.com/blog/waterfall-project-management-methodology ) 
 
 **Requirement gathering and documentation** -
 In this stage, you should gather comprehensive information about what this project requires. You can gather this information in a variety of ways, from interviews to questionnaires to interactive brainstorming. By the end of this phase, the project requirements should be clear, and you should have a requirements document that has been distributed to your team.
@@ -30,35 +30,35 @@ This methodology could ensure your project’s success even if there are unantic
 
 # V-Model
 
-## Phases  (source: https://www.tutorialspoint.com/sdlc/sdlc_v_model.htm)
+## Phases  (source: https://www.javatpoint.com/software-engineering-v-model)
 
-V-Model has validation and verification phases
+ Validation and verification phases
 
 1. **Verification Phases**
 
-**Business Requirement Analysis** - This is the first phase in the development cycle where the product requirements are understood from the customer’s perspective. This phase involves detailed communication with the customer to understand his expectations and exact requirement. This is a very important activity and needs to be managed well, as most of the customers are not sure about what exactly they need. The acceptance test design planning is done at this stage as business requirements can be used as an input for acceptance testing.
+**Business Requirement Analysis** - this is the first step where product requirements understood from the customer's side. This phase contains detailed communication to understand customer's expectations and exact requirements.
 
-**System Design** - Once you have the clear and detailed product requirements, it is time to design the complete system. The system design will have the understanding and detailing the complete hardware and communication setup for the product under development. The system test plan is developed based on the system design. Doing this at an earlier stage leaves more time for the actual test execution later.
+**System Design** - n this stage system engineers analyze and interpret the business of the proposed system by studying the user requirements document.
 
-**Architectural Design** - Architectural specifications are understood and designed in this phase. Usually more than one technical approach is proposed and based on the technical and financial feasibility the final decision is taken. The system design is broken down further into modules taking up different functionality. This is also referred to as High Level Design (HLD).
-The data transfer and communication between the internal modules and with the outside world (other systems) is clearly understood and defined in this stage. With this information, integration tests can be designed and documented during this stage.
+**Architectural Design** - The baseline in selecting the architecture is that it should understand all which typically consists of the list of modules, brief functionality of each module, their interface relationships, dependencies, database tables, architecture diagrams, technology detail, etc. The integration testing model is carried out in a particular phase.
 
-**Module Design** - In this phase, the detailed internal design for all the system modules is specified, referred to as Low Level Design (LLD). It is important that the design is compatible with the other modules in the system architecture and the other external systems. The unit tests are an essential part of any development process and helps eliminate the maximum faults and errors at a very early stage. These unit tests can be designed at this stage based on the internal module designs.
+**Module Design** - in the module design phase, the system breaks down into small modules. The detailed design of the modules is specified, which is known as Low-Level Design
 
-**Coding Phase** - The actual coding of the system modules designed in the design phase is taken up in the Coding phase. The best suitable programming language is decided based on the system and architectural requirements.
-The coding is performed based on the coding guidelines and standards. The code goes through numerous code reviews and is optimized for best performance before the final build is checked into the repository.
+**Coding Phase** - After designing, the coding phase is started. Based on the requirements, a suitable programming language is decided. There are some guidelines and standards for coding. Before checking in the repository, the final build is optimized for better performance, and the code goes through many code reviews to check the performance.
 
-2. **Validation Phases**
+2. **There are the various phases of Validation Phase of V-model:**
 
-**Unit Testing** - Unit tests designed in the module design phase are executed on the code during this validation phase. Unit testing is the testing at code level and helps eliminate bugs at an early stage, though all defects cannot be uncovered by unit testing.
+**Unit Testing** - n the V-Model, Unit Test Plans (UTPs) are developed during the module design phase. These UTPs are executed to eliminate errors at code level or unit level. A unit is the smallest entity which can independently exist, e.g., a program module. Unit testing verifies that the smallest entity can function correctly when isolated from the rest of the codes/ units.
 
-**Integration Testing** - Integration testing is associated with the architectural design phase. Integration tests are performed to test the coexistence and communication of the internal modules within the system.
+**Integration Testing** - Integration Test Plans are developed during the Architectural Design Phase. These tests verify that groups created and tested independently can coexist and communicate among themselves.
 
-**System Testing** - System testing is directly associated with the system design phase. System tests check the entire system functionality and the communication of the system under development with external systems. Most of the software and hardware compatibility issues can be uncovered during this system test execution.
+**System Testing** - System Tests Plans are developed during System Design Phase. Unlike Unit and Integration Test Plans, System Tests Plans are composed by the client?s business team. System Test ensures that expectations from an application developer are met.
 
 **Acceptance Testing** - Acceptance testing is associated with the business requirement analysis phase and involves testing the product in user environment. Acceptance tests uncover the compatibility issues with the other systems available in the user environment. It also discovers the non-functional issues such as load and performance defects in the actual user environment.
 
-## _**The difference between waterfall and V model is that in waterfall model the software testing is done after the completion of development phase while in V model, each phase in the development cycle has a directly associated testing phase.**_
+## The difference between waterfall and V model 
+
+The main difference between waterfall model and V model is that in waterfall model, the testing activities are carried out after the development activities are over. On the other hand in V model, testing activities start with the first stage itself. In other words, waterfall model is a continuous process, while the V model is a simultaneous process. 
 
 ## Agile
 
