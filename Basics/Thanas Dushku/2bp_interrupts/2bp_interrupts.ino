@@ -7,7 +7,10 @@ const byte Bit0 = 11;              //pin 11 is B0 of the predictor
 const byte Bit1 = 9;               //pin 9 is B1 of the predictor
 const byte interruptPin1 = 2;      //this pin is used for interrupting when the event bit is 0 or LOW
 const byte interruptPin2 = 3;      //this pin is used for interrupting when the event bit is 1 or HIGH
-int eventState = 2;
+#define notTakenEvent 0
+#define takenEvent 1
+#define resetEvent 2
+int eventState = resetEvent;
 
 int state = strongNotTaken;        //the initial state of the 2BP, 00
 
@@ -71,8 +74,8 @@ void loop()                         //main code of the 2BP
 }
 
 void event0() {               //ISR function that gets called when event0 happens and promts the state to switch to another before breaking out of it    
-	eventState = 0;
+	eventState = notTakenEvent;
 }
 void event1() {               //acts as ISR for when the event bit is 1
-	eventState = 1;
+	eventState = takenEvent;
 }
