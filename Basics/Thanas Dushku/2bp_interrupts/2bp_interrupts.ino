@@ -31,46 +31,46 @@ void loop()                         //main code of the 2BP
     case strongNotTaken:            //first state of the 2BP, displayed by the LED lights connected to pins 11 and 9
     	digitalWrite(Bit0,LOW);
     	digitalWrite(Bit1,LOW);
-    	if(eventState == 1){          //if interrupt 2 has occured we swap to state weakNotTaken
+    	if(eventState == takenEvent){          //if interrupt 2 has occured we swap to state weakNotTaken
           state = weakNotTaken;
     	}
-    eventState = 2;                 //resets the eventState variable so it doesnt get reused after an interrupt
+    eventState = resetEvent;                 //resets the eventState variable so it doesnt get reused after an interrupt
     break;
     
     case weakNotTaken:
     	digitalWrite(Bit0,LOW);
     	digitalWrite(Bit1,HIGH); 
-      if(eventState == 0){          //swaps to strongNotTaken or weakTaken based on what interrupt occured
+      if(eventState == notTakenEvent){          //swaps to strongNotTaken or weakTaken based on what interrupt occured
           state = strongNotTaken;
     	}
-    	if(eventState == 1){
+    	if(eventState == takenEvent){
           state = weakTaken;
     	}
-    eventState = 2;
+    eventState = resetEvent;
     break;
     
     case weakTaken:               
     	digitalWrite(Bit0,HIGH);
     	digitalWrite(Bit1,LOW); 
-      if(eventState == 0){
+      if(eventState == notTakenEvent){
           state = weakNotTaken;
     	}
-    	if(eventState == 1){
+    	if(eventState == takenEvent){
           state = strongTaken;
     	}
-    eventState = 2;
+    eventState = resetEvent;
     break;
     
     case strongTaken:
     	digitalWrite(Bit0,HIGH);
     	digitalWrite(Bit1,HIGH); 
-    	if(eventState == 0){
+    	if(eventState == notTakenEvent){
           state = weakTaken;
     	}
-    eventState = 2;
+    eventState = resetEvent;
     break;
   }
-  delay(5); 
+  delay(5);          
 }
 
 void event0() {               //ISR function that gets called when event0 happens and promts the state to switch to another before breaking out of it    
