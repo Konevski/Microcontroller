@@ -114,3 +114,14 @@ int main_blinky()
 - Nuclear systems
 - Security, Availability, Reliability, Safety and Resilience.
 
+### Atributes:
+- Dependable systems are typically characterized by the the following attributes:
+- Reliability: the system behaves as expected, with very few errors.
+- Availability: the system and services are mostly available, with very little or no down time.
+- Safety: the systems do not pose unacceptable risks to the environment or the health of users.
+- Confidentiality: data and other information should not be divulged without intent and authorization.
+- Survivability: The system services should be robust enough to withstand accidents and attacks.
+- Integrity: System data should not be modified without intent and authorization.
+- Maintainability: Maintenance of system hardware and services should not be difficult or excessively expensive.
+
+
