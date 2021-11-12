@@ -1,0 +1,85 @@
+#define strongNotTaken 0
+#define weakNotTaken 1
+#define weakTaken 2
+#define strongTaken 3
+
+#define notTakenEvent 0
+#define takenEvent 1
+#define resetEvent 2
+
+
+const byte Bit0 = 12;
+const byte Bit1 = 8;
+const byte interruptPin1 = 2;
+const byte interruptPin2 = 3;
+
+int State = resetEvent;
+int state = strongNotTaken;
+
+void setup() {
+  
+  pinMode(interruptPin1, INPUT);
+  pinMode(interruptPin2, INPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(Bit0, OUTPUT);
+  pinMode(Bit1, OUTPUT);
+  attachInterrupt(digitalPinToInterrupt(interruptPin1), event0, RISING);
+  attachInterrupt(digitalPinToInterrupt(interruptPin2), event1, RISING);
+}
+
+void loop() 
+{
+  switch(state){
+  case strongNotTaken:
+  digitalWrite(Bit0,LOW);
+  digitalWrite(Bit1,LOW);
+    if(State == takenEvent){
+       state = weakNotTaken;
+    }
+     state = resetEvent;
+  break;
+
+    case weakNotTaken:
+  digitalWrite(Bit0,LOW);
+  digitalWrite(Bit1,HIGH);
+    if(State == notTakenEvent){
+       state = strongNotTaken;
+    }
+     if(State == takenEvent){
+      state = weakTaken;
+     }
+     State = resetEvent;
+  break;
+
+    case weakTaken:
+  digitalWrite(Bit0,HIGH);
+  digitalWrite(Bit1,LOW);
+    if(State == notTakenEvent){
+       state = weakNotTaken;
+    }
+     if(State = takenEvent){
+      state = strongTaken;
+     }
+    State = resetEvent; 
+  break;
+
+    case strongTaken:
+     digitalWrite(Bit0,HIGH);
+     digitalWrite(Bit1,HIGH);
+    if(State == notTakenEvent){
+      state = weakTaken;
+    }
+    if(State == takenEvent){
+      state = strongTaken;
+    }
+    state = resetEvent;
+    break;
+   }
+  delay(5);
+  }
+  void event0(){
+    State = notTakenEvent;
+  }
+  void event1(){
+    State = takenEvent;
+  }
