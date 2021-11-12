@@ -57,7 +57,7 @@ void loop()
     if(State == notTakenEvent){
        state = weakNotTaken;
     }
-     if(State = takenEvent){
+     if(State == takenEvent){
       state = strongTaken;
      }
     State = resetEvent; 
@@ -68,9 +68,6 @@ void loop()
      digitalWrite(Bit1,HIGH);
     if(State == notTakenEvent){
       state = weakTaken;
-    }
-    if(State == takenEvent){
-      state = strongTaken;
     }
     State = resetEvent;
     break;
