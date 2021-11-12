@@ -36,7 +36,7 @@ void loop()
     if(State == takenEvent){
        state = weakNotTaken;
     }
-     state = resetEvent;
+     State = resetEvent;
   break;
 
     case weakNotTaken:
@@ -72,10 +72,10 @@ void loop()
     if(State == takenEvent){
       state = strongTaken;
     }
-    state = resetEvent;
+    State = resetEvent;
     break;
    }
-  delay(5);
+  delay(50);
   }
   void event0(){
     State = notTakenEvent;
