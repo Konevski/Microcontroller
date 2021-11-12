@@ -69,7 +69,7 @@ void loop()
     eventState = resetEvent;
   break;
  }
- delay(50);
+ delay(30);
  }
   void event0(){
     eventState = notTakenEvent;
