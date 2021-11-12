@@ -73,8 +73,8 @@ void loop()
  delay(50);
  }
   void event0(){
-    State = notTakenEvent;
+    eventState = notTakenEvent;
   }
   void event1(){
-    State = takenEvent;
+    eventState = takenEvent;
   }
