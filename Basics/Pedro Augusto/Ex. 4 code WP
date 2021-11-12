@@ -7,20 +7,18 @@
 #define takenEvent 1
 #define resetEvent 2
 
-
 const byte Bit0 = 12;
 const byte Bit1 = 8;
 const byte interruptPin1 = 2;
 const byte interruptPin2 = 3;
 
-int State = resetEvent;
+int eventState = resetEvent;
 int state = strongNotTaken;
 
 void setup() {
   
   pinMode(interruptPin1, INPUT);
   pinMode(interruptPin2, INPUT);
-  pinMode(LED_BUILTIN, OUTPUT);
   pinMode(Bit0, OUTPUT);
   pinMode(Bit1, OUTPUT);
   attachInterrupt(digitalPinToInterrupt(interruptPin1), event0, RISING);
@@ -31,49 +29,49 @@ void loop()
 {
   switch(state){
   case strongNotTaken:
-  digitalWrite(Bit0,LOW);
-  digitalWrite(Bit1,LOW);
-    if(State == takenEvent){
+    digitalWrite(Bit0,LOW);
+    digitalWrite(Bit1,LOW);
+    if(eventState == takenEvent){
        state = weakNotTaken;
     }
-     State = resetEvent;
+    eventState = resetEvent;
   break;
 
-    case weakNotTaken:
-  digitalWrite(Bit0,LOW);
-  digitalWrite(Bit1,HIGH);
-    if(State == notTakenEvent){
+  case weakNotTaken:
+    digitalWrite(Bit0,LOW);
+    digitalWrite(Bit1,HIGH);
+    if(eventState == notTakenEvent){
        state = strongNotTaken;
     }
-     if(State == takenEvent){
-      state = weakTaken;
-     }
-     State = resetEvent;
+    if(eventState == takenEvent){
+       state = weakTaken;
+    }
+    eventState = resetEvent;
   break;
 
-    case weakTaken:
-  digitalWrite(Bit0,HIGH);
-  digitalWrite(Bit1,LOW);
-    if(State == notTakenEvent){
+  case weakTaken:
+    digitalWrite(Bit0,HIGH);
+    digitalWrite(Bit1,LOW);
+    if(eventState == notTakenEvent){
        state = weakNotTaken;
     }
-     if(State == takenEvent){
-      state = strongTaken;
-     }
-    State = resetEvent; 
+    if(eventState == takenEvent){
+        state = strongTaken;
+    }
+    eventState = resetEvent; 
   break;
 
-    case strongTaken:
-     digitalWrite(Bit0,HIGH);
-     digitalWrite(Bit1,HIGH);
-    if(State == notTakenEvent){
-      state = weakTaken;
+  case strongTaken:
+    digitalWrite(Bit0,HIGH);
+    digitalWrite(Bit1,HIGH);
+    if(eventState == notTakenEvent){
+       state = weakTaken;
     }
-    State = resetEvent;
-    break;
-   }
-  delay(5);
-  }
+    eventState = resetEvent;
+  break;
+ }
+ delay(50);
+ }
   void event0(){
     State = notTakenEvent;
   }
