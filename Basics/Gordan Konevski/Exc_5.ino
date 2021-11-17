@@ -107,7 +107,7 @@ void loop()
       if (buttonvalue == HIGH)               //Logic to set the value of x to send to master
       {
         x=1;
-        Serial.print("Thank you")
+        Serial.print("Thank you");
       }else
       {
         x=0;
