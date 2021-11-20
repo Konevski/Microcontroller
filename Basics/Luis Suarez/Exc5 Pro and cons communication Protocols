@@ -1,31 +1,13 @@
-# I2C Advantages 
-## (https://www.arrow.com/en/research-and-events/articles/spi-vs-i2c-protocols-pros-and-cons)
+2. **There are the various phases of Validation Phase of V-model:**
 
+**Unit Testing** - n the V-Model, Unit Test Plans (UTPs) are developed during the module design phase. These UTPs are executed to eliminate errors at code level or unit level. A unit is the smallest entity which can independently exist, e.g., a program module. Unit testing verifies that the smallest entity can function correctly when isolated from the rest of the codes/ units.
 
+**Integration Testing** - Integration Test Plans are developed during the Architectural Design Phase. These tests verify that groups created and tested independently can coexist and communicate among themselves.
 
-**1. Simplicity. The most apparent difference between I2C and SPI is that I2C works as a 2-wire bus, needing only serial data (SDA) and serial clock (SCK) 
-lines for data transmission and synchronization. SPI, on the other hand, requires four wires to control a single slave: SCK, master out slave in (MOSI), 
-master in slave out (MISO), and slave select (SS).
+**System Testing** - System Tests Plans are developed during System Design Phase. Unlike Unit and Integration Test Plans, System Tests Plans are composed by the client?s business team. System Test ensures that expectations from an application developer are met.
 
-**Easy add-ons. When users need more than one slave device, SPI implements an additional SS pin for each one. 
-When an I2C system needs to implement new slave devices, they can simply “clip on” to the existing bus using a 7-bit addressing system to identify each module. 
-This I2C scheme requires a proper address configuration but avoids the burden of extra wiring for each device.
+**Acceptance Testing** - Acceptance testing is associated with the business requirement analysis phase and involves testing the product in user environment. Acceptance tests uncover the compatibility issues with the other systems available in the user environment. It also discovers the non-functional issues such as load and performance defects in the actual user environment.
 
-## SPI Advantages
-While I2C’s wiring simplicity and standardization are significant advantages, SPI has some attractive features as well.
+## The difference between waterfall and V model 
 
-1. Communication. Separate MISO/MOSI data lines mean that it’s capable of full-duplex communication, 
-as opposed to I2C’s half-duplex operation, meaning that data send and receive transmissions must alternate.
-
-2. Speed. I2C originally defined data transfer rates at 100kbps, though we have seen it bump up to 400kbps or even up to 5Mbps in Ultra Fast-mode. SPI, 
-however, does not define a top—or any—communications speed, and can be implemented at speeds of 10 Mbps or more.
-
-# Waterfall
-
-## Phases of Waterfall (Source https://www.lucidchart.com/blog/waterfall-project-management-methodology ) 
-
-**Requirement gathering and documentation** -
-In this stage, you should gather comprehensive information about what this project requires. You can gather this information in a variety of ways, from interviews to questionnaires to interactive brainstorming. By the end of this phase, the project requirements should be clear, and you should have a requirements document that has been distributed to your team.
-
-**System design** -
-Using the established requirements, your team designs the system. No coding takes place during this phase, but the team establishes specs such as programming language or hardware requirements.
+The main difference between waterfall model and V model is that in waterfall model, the testing activities are carried out after the development activities are over. On the other hand in V model, testing activities start with the first stage itself. In other words, waterfall model is a continuous process, while the V model is a simultaneous process
