@@ -27,10 +27,10 @@ This I2C scheme requires a proper address configuration but avoids the burden of
 
 ### Disadvantages of Using UART
 
--Size of the data frame is limited to only 9 bits
+- Size of the data frame is limited to only 9 bits
 
--Cannot use multiple master systems and slaves
+- Cannot use multiple master systems and slaves
 
--Baud rates of each UART must be within 10% of each other to prevent data loss.
+- Baud rates of each UART must be within 10% of each other to prevent data loss.
 
--Low data transmission speeds
+- Low data transmission speeds
