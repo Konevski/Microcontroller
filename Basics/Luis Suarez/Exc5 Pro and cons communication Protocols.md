@@ -18,12 +18,19 @@ This I2C scheme requires a proper address configuration but avoids the burden of
 
 
 ### Advantages of Using UART
+
 - Simple to operate, well documented as it is a widely used method with a lot of resources online
+
 - No clock needed
+
 - Parity bit to allow for error checking
 
 ### Disadvantages of Using UART
+
 -Size of the data frame is limited to only 9 bits
+
 -Cannot use multiple master systems and slaves
+
 -Baud rates of each UART must be within 10% of each other to prevent data loss.
+
 -Low data transmission speeds
