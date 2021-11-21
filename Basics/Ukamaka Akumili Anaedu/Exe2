@@ -1,0 +1,17 @@
+###Task 1: Explain briefly how the various characteristics of an embodded system can be fullfilled. Which methods and techniques are used.
+
+
+####Reactive system
+-It can continuosly interact with outsid world, and also real-time data acquisition.
+-it usually has deadlines especially when the system is exposed to higher risk
+-the examples are; thermometer, an Arduino, messaging devices and google apps etc.
+
+####Real-time system
+- the time it takes to ensure that it delivers on timeand therefore it priments deadlines.
+- it provides output within a difined or specific time.
+- soft real-time system depends on deadlines to be more useful but a failure woundnt cause major problem or loss.(e.g, video games, televison programs) 
+- Hard real-time systems must meet deadlines at all cost in time or most damage will occur (e.g, Traffic light)
+- Multimedia systems that uses network
+
+#### Continuous/discrete/hybird system
+-
