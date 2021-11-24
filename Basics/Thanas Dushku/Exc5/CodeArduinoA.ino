@@ -18,14 +18,12 @@ void setup()
 {
   Serial.begin(9600);
   pinMode(buttonPin, INPUT);
-  pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop()
 {
   buttonState = digitalRead(buttonPin);
   if (buttonState == HIGH) {
-    digitalWrite(LED_BUILTIN, HIGH);
     if(buttonCheck == notPressedBefore){
     Serial.write("Button pressed");
     buttonCheck = pressedBefore;
