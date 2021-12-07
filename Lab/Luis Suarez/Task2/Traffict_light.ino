@@ -11,7 +11,7 @@ int Yellow = 11;
 int Green = 10;
 int pRED = 9;
 int pGREEN = 8;
-int Button = 2;
+int pButton = 2;
 
 int state = 0;
 int ButtonState = 0;
@@ -25,7 +25,7 @@ void setup()
   pinMode(pRED, OUTPUT);
   pinMode(pGREEN, OUTPUT);
   pinMode(Button, INPUT); 
-  attachInterrupt(digitalPinToInterrupt(Button), ButtonPressed, RISING)
+  attachInterrupt(digitalPinToInterrupt(pButton), ButtonPressed, RISING)
  ;
 }
 
