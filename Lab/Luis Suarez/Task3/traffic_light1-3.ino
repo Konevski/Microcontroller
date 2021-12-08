@@ -69,8 +69,7 @@ void loop()
     for(int i = 0; i < 5; i++){
       if(ButtonState == pressed){
         ButtonState = reset;
-        state = yellowLight;
-        break;
+       break;
       }
       delay(1000);
     }
