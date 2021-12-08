@@ -25,8 +25,8 @@ void setup()
   pinMode(Yellow, OUTPUT);
   pinMode(pRED, OUTPUT);
   pinMode(pGREEN, OUTPUT);
-  pinMode(Button, INPUT); 
-  attachInterrupt(digitalPinToInterrupt(Button), ButtonPressed, RISING)
+  pinMode(pButton, INPUT); 
+  attachInterrupt(digitalPinToInterrupt(pButton), ButtonPressed, RISING)
  ;
 }
 
