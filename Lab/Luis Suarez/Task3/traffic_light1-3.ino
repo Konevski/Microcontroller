@@ -48,8 +48,7 @@ void loop()
     case redLight:
     digitalWrite(Yellow,LOW);
     digitalWrite(Red, HIGH);
-    
- pedestrian = pGreen;
+    pedestrian = pGreen;
     delay(20000);
     state = yellowLight;
     
@@ -58,8 +57,7 @@ void loop()
     case yellowLight:
     digitalWrite(Red, LOW);
     digitalWrite(Yellow, HIGH);
-    
-     delay(5000);
+    delay(5000);
     state = greenLight;
     pedestrian = pRed;
     break;
