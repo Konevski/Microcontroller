@@ -44,7 +44,7 @@ static int protothread1(struct pt *ptl) {
 }
 
 /* exactly the same as the protothread1 function */
-static int protothread2(struct pt *pt) {
+static int protothread2(struct pt *pt2) {
   PT_BEGIN(pt);
   switch(statePedestrian){
     case pRed:
