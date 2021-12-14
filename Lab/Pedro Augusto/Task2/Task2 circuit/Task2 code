@@ -1,0 +1,81 @@
+#define R_light 0
+#define Y_light 1
+#define G_light 2
+#define RY_light 3
+
+#define pressed 0
+#define reset 0
+
+  int GREEN = 8;
+  int YELLOW = 9;
+  int RED = 10;
+  int pRED = 2;
+  int pGREEN = 4;
+  int pBUTTON = 3;
+
+  int state = 0;
+  int pButtonstate = 0;
+  
+void setup()
+{
+  Serial.begin(9000);
+  pinMode(GREEN, OUTPUT);
+  pinMode(YELLOW, OUTPUT);
+  pinMode(RED, OUTPUT);
+  pinMode(pRED, OUTPUT);
+  pinMode(pGREEN, OUTPUT);
+  pinMode(pBUTTON, INPUT);
+  attachInterrupt(digitalPinToInterrupt(pBUTTON), pButtonpressed, RISING);
+}
+
+void loop()
+{
+  switch(state){
+    
+  case R_light:
+  digitalWrite(YELLOW, LOW);
+  digitalWrite(RED, HIGH);
+  digitalWrite(pGREEN, HIGH);
+  digitalWrite(pRED, LOW);  
+  delay(20000);
+  state = Y_light;
+  break;
+    
+  case Y_light:
+  digitalWrite(YELLOW, HIGH);
+  digitalWrite(RED, LOW);
+  digitalWrite(pGREEN, LOW);
+  digitalWrite(pRED, HIGH);    
+  delay(5000);
+  state = G_light;
+  break;
+    
+  case G_light:
+  digitalWrite(YELLOW, LOW);
+  digitalWrite(GREEN, HIGH);
+  digitalWrite(RED, LOW);
+  digitalWrite(pGREEN, LOW);
+  delay(15000);
+    for(int i=0; i<10; i++){
+     if(pButtonstate == pressed){
+        pButtonstate = reset;
+        state = RY_light;
+       break;
+     }
+      delay(1000);
+    }
+  state = RY_light;
+  break;
+        
+  case RY_light:
+  digitalWrite(YELLOW, HIGH);
+  digitalWrite(RED, HIGH);
+  digitalWrite(GREEN, LOW);
+  delay(5000);
+  state = R_light;
+  break;
+        }
+}
+        void pButtonpressed(){
+          pButtonstate = pressed;
+                  }
