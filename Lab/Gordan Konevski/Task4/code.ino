@@ -20,6 +20,8 @@ int state = redLight;
 int pButtonState = 0;
 int statePedestrian = pGreen;
 
+static struct pt pt1, pt2; // each protothread needs one of these
+
 void setup()
 {
   pinMode(RED, OUTPUT);
