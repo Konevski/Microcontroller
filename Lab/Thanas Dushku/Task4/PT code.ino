@@ -38,22 +38,22 @@ void setup()
 }
 
 static int protothread1(struct pt *ptl) {
-	PT_BEGIN(pt);
-  switch(statePedestrian){
-    case pRed:
+PT_BEGIN(pt);
+switch(statePedestrian){
+  case pRed:
     digitalWrite(pGREEN, LOW);
     digitalWrite(pRED, HIGH);    
-    break;
+  break;
     
-    case pGreen:
+  case pGreen:
     digitalWrite(pGREEN, HIGH);
     digitalWrite(pRED, LOW);
-    break;
-  }
-   PT_END(pt);
+   break;
 }
-  static int protothread2(struct pt *pt2) {
-	PT_BEGIN(pt);
+PT_END(pt);
+}
+static int protothread2(struct pt *pt2) {
+  PT_BEGIN(pt);
   switch(stateTraffic){
     case redLight:
     digitalWrite(YELLOW,LOW);
@@ -94,7 +94,7 @@ static int protothread1(struct pt *ptl) {
     statePedestrian = pGreen;
     break;
   }
-  PT_END(pt);
+ PT_END(pt);
  }
   
 void loop()
