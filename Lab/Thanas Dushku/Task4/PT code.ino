@@ -49,9 +49,10 @@ switch(statePedestrian){
     digitalWrite(pGREEN, HIGH);
     digitalWrite(pRED, LOW);
    break;
-}
+  }
 PT_END(pt);
 }
+
 static int protothread2(struct pt *pt2) {
   PT_BEGIN(pt);
   switch(stateTraffic){
@@ -102,6 +103,7 @@ void loop()
   protothread1(&pt1);
   protothread2(&pt2); 
 }
+
 void pButtonPressed(){
   pButtonState = pressed;
   Serial.println("pedestrian button pressed");
