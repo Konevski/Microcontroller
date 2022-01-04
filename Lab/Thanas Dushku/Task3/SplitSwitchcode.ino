@@ -5,13 +5,12 @@
 #define pRed 4
 #define pGreen 5
 
-
 #define pressed 1
 #define reset 0
 
-int RED = 10;
-int YELLOW = 9;
-int GREEN = 8;
+int RED = 9;
+int YELLOW = 8;
+int GREEN = 7;
 int pRED = 5;
 int pGREEN = 4;
 int pButton = 2;
