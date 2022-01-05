@@ -1,6 +1,9 @@
 //SPI MASTER (ARDUINO)
 //SPI COMMUNICATION BETWEEN TWO ARDUINO 
 //CIRCUIT DIGEST
+
+//Works with Thanas Dushku's code
+
 #include <SPI.h>
 
 #define redLight 0
