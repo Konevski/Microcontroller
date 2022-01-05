@@ -4,6 +4,8 @@
 //CIRCUIT DIGEST
 //Pramoth.T
 
+// Works with Gordan Konevski's code
+
 #include <SPI.h>
 
 #define redLight 0
