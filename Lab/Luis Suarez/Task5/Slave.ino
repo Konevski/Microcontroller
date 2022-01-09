@@ -111,8 +111,8 @@ void loop()
 	  }
 	}
     
-    if (Slavesend == 1)
-      Slavesend = 2;
+    if (Slavesend == 0)
+      Slavesend = 1;
     else
       Slavesend = 0;
                             
