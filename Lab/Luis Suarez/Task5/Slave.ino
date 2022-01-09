@@ -9,38 +9,37 @@
 #include <SPI.h>
 
 #define redLight 0
-#define redYellowLight 1
+#define yellowLight 1
 #define greenLight 2
-#define yellowLight 3
+#define redYellowLight 3
+#define pressed 1
+#define reset 0
 #define pRed 4
 #define pGreen 5
 
-#define pressed 1
-#define reset 0
+int Red = 13;
+int Yellow = 12;
+int Green = 11;
+int pRED = 10;
+int pGREEN = 9;
+int Button = 2;
 
-int RED = 9;
-int YELLOW = 8;
-int GREEN = 7;
-int pRED = 5;
-int pGREEN = 4;
-int pButton = 2;
-
-int stateTraffic = redLight;
-int statePedestrian = pGreen;
-int pButtonState = 0;
+int state = 0;
+int ButtonState = 0;
+int pedestrian = pGreen;
 volatile byte Slavereceived,Slavesend;
 
 void setup()
 {
   
   Serial.begin(9600);
-  pinMode(RED, OUTPUT);
-  pinMode(GREEN, OUTPUT);
-  pinMode(YELLOW, OUTPUT);
+  pinMode(Red, OUTPUT);
+  pinMode(Green, OUTPUT);
+  pinMode(Yellow, OUTPUT);
   pinMode(pRED, OUTPUT);
   pinMode(pGREEN, OUTPUT);
   pinMode(pButton, INPUT); 
-  attachInterrupt(digitalPinToInterrupt(pButton), pButtonPressed, RISING);
+  attachInterrupt(digitalPinToInterrupt(pButton), ButtonPressed, RISING)
 
   SPCR |= _BV(SPE);                       //Turn on SPI in Slave Mode
 
@@ -55,66 +54,67 @@ ISR (SPI_STC_vect)                        //Inerrrput routine function
 
 void loop()
 { 
-    if (Slavereceived == 1) 
+    if (Slavereceived == 2) 
      {
-		switch(statePedestrian){
-		  case pRed:
-		  digitalWrite(pGREEN, LOW);
-		  digitalWrite(pRED, HIGH);    
-		  break;
+		 switch(pedestrian){
+		    case pRed:
+		    digitalWrite(pGREEN, LOW);
+		    digitalWrite(pRED, HIGH);    
+		    break;
 
-		  case pGreen:
-		  digitalWrite(pGREEN, HIGH);
-		  digitalWrite(pRED, LOW);
-		  break;
+		    case pGreen:
+		    digitalWrite(pGREEN, HIGH);
+		    digitalWrite(pRED, LOW);
+		    break;
 		  }
+		  switch(state){
+		    case redLight:
+		    digitalWrite(Yellow,LOW);
+		    digitalWrite(Red, HIGH);
+		    pedestrian = pGreen;
+		    delay(20000);
+		    state = yellowLight;
 
-		switch(stateTraffic){
-		  case redLight:
-		  digitalWrite(YELLOW,LOW);
-		  digitalWrite(RED, HIGH);
-		  delay(20000);
-		  stateTraffic = redYellowLight;
-		  statePedestrian = pRed;
-		  break;
+		    break;
 
-		  case redYellowLight:
-		  digitalWrite(YELLOW, HIGH);
-		  delay(5000);
-		  stateTraffic = greenLight;
-		  break;
+		    case yellowLight:
+		    digitalWrite(Red, LOW);
+		    digitalWrite(Yellow, HIGH);
+		    delay(5000);
+		    state = greenLight;
+		    pedestrian = pRed;
+		    break;
 
-		  case greenLight:
-		  digitalWrite(RED, LOW);
-		  digitalWrite(YELLOW, LOW);
-		  digitalWrite(GREEN, HIGH);
-		  delay(10000);
-		  for(int i = 0; i < 10; i++){
-			if(pButtonState == pressed){
-			  pButtonState = reset;
-			  Serial.println("button reset");
-			  stateTraffic = yellowLight;
-			  break;
-			}
-			delay(1000);
-		  }
-		  stateTraffic = yellowLight;
-		  break;
+		    case greenLight:
+		    digitalWrite(Yellow, LOW);
+		    digitalWrite(Green, HIGH);
+		    delay(10000);
+		    for(int i = 0; i < 5; i++){
+		      if(ButtonState == pressed){
+			ButtonState = reset;
+		       break;
+		      }
+		      delay(1000);
+		    }
+		    state = redYellowLight;
+		    break;
 
-		  case yellowLight:
-		  digitalWrite(YELLOW, HIGH);
-		  digitalWrite(GREEN, LOW);
-		  delay(5000);
-		  stateTraffic = redLight;
-		  statePedestrian = pGreen;
-		  break;
-		}	 
+		    case redYellowLight:
+		    digitalWrite(Green, LOW);
+		    digitalWrite(Red, HIGH);
+		    digitalWrite(Yellow, HIGH);
+		    delay(5000);
+		    state = redLight;
+		    pedestrian = pGreen;
+		    break;
+
+	  }
 	}
     
     if (Slavesend == 1)
-      Slavesend = 0;
+      Slavesend = 2;
     else
-      Slavesend = 1;
+      Slavesend = 0;
                             
     SPDR = Slavesend;                           //Sends the x value to master via SPDR 
     delay(1000);
