@@ -2,7 +2,7 @@
 //SPI COMMUNICATION BETWEEN TWO ARDUINO 
 //CIRCUIT DIGEST
 
-//Works with Thanas Dushku's and Luis Suarez' code
+// Works with Thanas Dushku's and Luis Suarez' code
 
 #include <SPI.h>
 
