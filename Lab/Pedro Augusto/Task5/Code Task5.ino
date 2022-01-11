@@ -1,4 +1,4 @@
-#include<pt.h>
+#include<SPI.h>
 
 #define R_light 0
 #define Y_light 1
