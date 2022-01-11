@@ -106,18 +106,19 @@ void loop (void)
 
     }
     
-    switch (Mastersend)
+    switch (Mastersend){
       case 1:
-        Mastersend = 2
+        Mastersend = 2;
       case 2:
         Mastersend = 0;
       default:
         Mastersend = 1;
-    
-   digitalWrite(SS, LOW);                  //Starts communication with Slave connected to master                          
+    }
+   }
+   digitalWrite(SS, LOW);                  //Starts communication with Slave connected to master
    Mastereceive=SPI.transfer(Mastersend); //Send the mastersend value to slave also receives value from slave
    delay(1000);
-  
+
 }
 
 void pButtonPressed(){
