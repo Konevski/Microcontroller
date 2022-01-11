@@ -4,7 +4,7 @@
 //CIRCUIT DIGEST
 //Pramoth.T
 
-// Works with Gordan Konevski's code
+// Works with Gordan Kondevski's and Luis Suarez' code
 
 #include <SPI.h>
 
