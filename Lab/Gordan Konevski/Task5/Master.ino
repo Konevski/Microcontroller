@@ -25,8 +25,8 @@ int order = 0;
 int state = redLight;
 int pButtonState = 0;
 int statePedestrian = pGreen;
-byte Mastersend = 0;   
-byte Mastereceive = 0;
+volatile byte Mastersend = 0;   
+volatile byte Mastereceive = 0;
 
 void setup (void)
 {
