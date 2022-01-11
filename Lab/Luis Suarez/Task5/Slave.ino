@@ -4,7 +4,8 @@
 //CIRCUIT DIGEST
 //Pramoth.T
 
-// Works with Gordan Konevski's code
+// Works with Gordan Konevski's code and Thanas Dushku' code
+
 
 #include <SPI.h>
 
